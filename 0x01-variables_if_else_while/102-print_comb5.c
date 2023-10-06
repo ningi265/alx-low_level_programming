@@ -9,24 +9,22 @@ int main(void)
 
 	int j;
 
-	int k;
-
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = i; j <= 9; j++)
+		for (j = 0; j < 100; j++)
 		{
-			for (k = 0; k <= 9; i++)
+			if (i < j)
 			{
-				if (!((k == j) || (j == i) || (j > i) || (k > j)))
-			}
-			putchar(k);
-			putchar(j);
-			putchar(i);
-
-			if (!(i == '9' && k == '7' && j == '8'))
-			{
-				putchar(',');
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
