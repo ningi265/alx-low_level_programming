@@ -5,9 +5,12 @@
  */
 int main(void)
 {
-	for (char letter = 'z'; letter >= 'a'; letter--)
+	char letter = 'z';
+
+	for ( letter >= 'a')
 	{
 		putchar(letter);
+		letter--;
 	}
 	putchar('\n');
 	return (0);
