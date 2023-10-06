@@ -9,17 +9,21 @@ int main(void)
 
 	int j;
 
-	for (i = 0; i <= 99; i++)
-	{
-		for (j = i; j <= 99; j++)
-		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
+	int k;
 
-			if (i != 99 || j != 99)
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = i; j <= 9; j++)
+		{
+			for (k = 0; k <= 9; i++)
+			{
+				if (!((k == j) || (j == i) || (j > i) || (k > j)))
+			}
+			putchar(k);
+			putchar(j);
+			putchar(i);
+
+			if (!(i == '9' && k == '7' && j == '8'))
 			{
 				putchar(',');
 				putchar(' ');
