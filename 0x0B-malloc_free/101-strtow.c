@@ -64,7 +64,7 @@ void util(char **words, char *str)
 		i++;
 	}
 	if (flag == 1)
-		create_word(words, str, strat, i, j);
+		create_word(words, str, start, i, j);
 }
 /**
 * create_word - creates a word and insert it into the array
